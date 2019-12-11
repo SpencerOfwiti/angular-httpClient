@@ -53,7 +53,7 @@ export class DataService {
 
   public sendGetRequest() {
     // Add safe, URL encoded_page parameter
-    return this.httpClient.get<Product[]>(this.REST_API_SERVER, { params: new HttpParams({fromString: '_page=1&_limit=20'}), observe: 'response'})
+    return this.httpClient.get<Product[]>(this.REST_API_SERVER, { params: new HttpParams({fromString: '_page=1&_limit=12'}), observe: 'response'})
     .pipe(retry(3), catchError(this.handleError), tap(res => {
       console.log(res.headers.get('Link'));
       this.parseLinkHeader(res.headers.get('Link'));
