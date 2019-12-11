@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-httpclient-e572c": {
+      "hosting": {
+        "angular-httpclient-example": [
+          "angular-httpclient-e572c"
+        ]
+      }
+    }
+  }
+}

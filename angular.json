@@ -119,6 +119,10 @@
               "devServerTarget": "angular-httpclient-example:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
